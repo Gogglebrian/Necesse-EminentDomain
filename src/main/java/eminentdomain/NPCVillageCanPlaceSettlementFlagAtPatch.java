@@ -4,24 +4,15 @@ import necesse.engine.localization.message.LocalMessage;
 import necesse.engine.localization.message.StaticMessage;
 import necesse.engine.modLoader.annotations.ModMethodPatch;
 import necesse.engine.network.server.ServerClient;
-import necesse.engine.util.PointHashMap;
 import necesse.engine.util.PointHashSet;
-import necesse.entity.mobs.Mob;
-import necesse.entity.mobs.friendly.human.HumanMob;
-import necesse.gfx.GameColor;
-import necesse.level.maps.levelData.LevelData;
 import necesse.level.maps.levelData.OneWorldNPCVillageData;
 import necesse.level.maps.levelData.SingleRegionBasedLevelData;
 import necesse.level.maps.levelData.settlementData.SettlementBoundsManager;
+import net.bytebuddy.asm.Advice;
 
 import java.awt.*;
 import java.lang.reflect.Field;
 import java.lang.reflect.Method;
-import java.util.LinkedList;
-import java.util.stream.Collectors;
-
-import necesse.level.maps.levelData.settlementData.settler.Settler;
-import net.bytebuddy.asm.Advice;
 
 @ModMethodPatch(target = OneWorldNPCVillageData.class, name = "canPlaceSettlementFlagAt", arguments = {int.class, int.class, int.class})
 public class NPCVillageCanPlaceSettlementFlagAtPatch {

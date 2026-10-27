@@ -28,9 +28,4 @@ public class SettlementFlagItemCanPlacePatch {
             // Don't skip the vanilla method
             return false;
         }
-
-        @Advice.OnMethodExit()
-        public static void onExit() {
-            NPCVillageCanPlaceSettlementFlagAtPatch.sendNPCsMessageToRequesterIfAny();
-        }
 }

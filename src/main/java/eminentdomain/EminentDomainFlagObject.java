@@ -2,23 +2,9 @@ package eminentdomain;
 
 import necesse.engine.gameLoop.tickManager.TickManager;
 import necesse.engine.localization.Localization;
-import necesse.engine.localization.message.LocalMessage;
-import necesse.engine.network.packet.PacketOpenContainer;
-import necesse.engine.network.server.ServerClient;
-import necesse.engine.registries.ContainerRegistry;
-import necesse.engine.util.GameUtils;
 import necesse.engine.util.LevelIdentifier;
-import necesse.engine.world.WorldEntity;
-import necesse.engine.world.worldData.SettlementsWorldData;
 import necesse.entity.mobs.PlayerMob;
-import necesse.entity.mobs.networkField.BooleanNetworkField;
-import necesse.entity.objectEntity.ObjectEntity;
-import necesse.entity.objectEntity.SettlementFlagObjectEntity;
-import necesse.gfx.GameColor;
-import necesse.gfx.GameResources;
-import necesse.gfx.HumanLook;
 import necesse.gfx.camera.GameCamera;
-import necesse.gfx.drawOptions.DrawOptions;
 import necesse.gfx.drawOptions.texture.TextureDrawOptions;
 import necesse.gfx.drawables.LevelSortedDrawable;
 import necesse.gfx.drawables.OrderableDrawables;
@@ -29,21 +15,14 @@ import necesse.gfx.gameTooltips.StringTooltips;
 import necesse.gfx.gameTooltips.TooltipLocation;
 import necesse.inventory.InventoryItem;
 import necesse.inventory.item.Item;
-import necesse.inventory.item.placeableItem.objectItem.SettlementFlagObjectItem;
 import necesse.inventory.item.toolItem.ToolType;
 import necesse.inventory.lootTable.LootTable;
-import necesse.inventory.lootTable.lootItem.LootItem;
 import necesse.level.gameObject.GameObject;
 import necesse.level.gameObject.ObjectHoverHitbox;
 import necesse.level.maps.Level;
-import necesse.level.maps.levelData.settlementData.NetworkSettlementData;
-import necesse.level.maps.levelData.settlementData.ServerSettlementData;
-import necesse.level.maps.levelData.settlementData.notifications.SettlementNotificationManager;
-import necesse.level.maps.levelData.settlementData.notifications.SettlementNotificationSeverity;
 import necesse.level.maps.light.GameLight;
 
 import java.awt.*;
-import java.util.Comparator;
 import java.util.List;
 
 public class EminentDomainFlagObject extends GameObject {
@@ -59,9 +38,7 @@ public class EminentDomainFlagObject extends GameObject {
     }
 
     public LootTable getLootTable(Level level, int layerID, int tileX, int tileY) {
-        LootTable lootTable = new LootTable();
-
-        return lootTable;
+        return new LootTable();
     }
 
     public void loadTextures() {
