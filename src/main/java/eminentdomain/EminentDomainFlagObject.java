@@ -89,7 +89,6 @@ public class EminentDomainFlagObject extends GameObject {
         tooltips.add(Localization.translate("itemtooltip", "eminentdomainflagtip1"));
         tooltips.add(Localization.translate("itemtooltip", "eminentdomainflagtip2"));
         tooltips.add(Localization.translate("itemtooltip", "eminentdomainflagtip3"));
-        tooltips.add(Localization.translate("itemtooltip", "eminentdomainflagtip4"));
         return tooltips;
     }
 

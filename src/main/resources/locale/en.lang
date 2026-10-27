@@ -4,16 +4,16 @@ eminentdomainflag=Eminent Domain Flag
 [itemtooltip]
 eminentdomainflagtip0=Provides beauty recreation to your
 eminentdomainflagtip1=Used to divest NPC villages of\ntheir land claims
-eminentdomainflagtip2=Each flag can free one 16x16-tile\nregion
+eminentdomainflagtip2=Each flag can free one 16x16-tile\nregion for new settlement or\nexpansion
 eminentdomainflagtip3=Can only be used on surface
 
 [misc]
 eminentdomainregionsclaimed=§iRegions claimed by NPC village:
 eminentdomainregion=Region
 eminentdomainflaghovertooltip=Can be safely removed
-eminentdomainsuccess=§7Success! All claims on this region have been released.
-eminentdomainevictlist=§iTo divest the village of this region, the following NPC villagers must be recruited or removed:
-eminentdomainalreadyfree=§iRegion is already free
+eminentdomainsuccess=§7Eminent domain invoked! Region freed for new settlement or expansion
+eminentdomainevictlist=§iTo proceed, NPC villagers must be recruited or removed:
+eminentdomainalreadyfree=§iRegion is already free for settlement or expansion
 eminentdomainalreadysettlement=§iRegion is already part of a player settlement
 eminentdomainerrornovillagedata=§6ERROR: No villager data
 eminentdomainerrorgeneral=§6ERROR: see stack trace
